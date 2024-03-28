@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body, html{
+            height: 100vh;
+            width: 100vw;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #text{
+            padding: 2em;
+        }
+        #text::first-letter{
+            color: red;
+            font-size: 30px;
+        }
+        #text::first-line{
+            color: blue;
+        }
+        #text::selection{
+            color: yellow;
+            background-color: black;
+        }
+        #placeholder::placeholder{
+            color: violet;
+        }
+        b::before{
+            content: "Hol";
+            color: red;
+        }
+        b::after{
+            content: " Mundo";
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div id="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, itaque harum? Dolorem illum autem, deleniti obcaecati minus veritatis quam, aliquid repellat perspiciatis beatae cumque excepturi perferendis aspernatur, deserunt odio voluptatum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, itaque harum? Dolorem illum autem, deleniti obcaecati minus veritatis quam, aliquid repellat perspiciatis beatae cumque excepturi perferendis aspernatur, deserunt odio voluptatum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, itaque harum? Dolorem illum autem, deleniti obcaecati minus veritatis quam, aliquid repellat perspiciatis beatae cumque excepturi perferendis aspernatur, deserunt odio voluptatum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, itaque harum? Dolorem illum autem, deleniti obcaecati minus veritatis quam, aliquid repellat perspiciatis beatae cumque excepturi perferendis aspernatur, deserunt odio voluptatum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, itaque harum? Dolorem illum autem, deleniti obcaecati minus veritatis quam, aliquid repellat perspiciatis beatae cumque excepturi perferendis aspernatur, deserunt odio voluptatum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, itaque harum? Dolorem illum autem, deleniti obcaecati minus veritatis quam, aliquid repellat perspiciatis beatae cumque excepturi perferendis aspernatur, deserunt odio voluptatum.
+    </div>
+    <input type="text" id="placeholder" placeholder="asd">
+    <b>a</b>
+</body>
+</html>

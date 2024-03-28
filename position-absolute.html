@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body, html{
+            width: 100vw;
+            height: 100vh;
+        }
+        #ContenedorSupremo{
+            position: relative;
+            width: 75%;
+            height: 50%;
+            margin: 50px auto;
+            background-color: olivedrab;
+            outline: black 20px solid;
+        }
+        .Contenedor{
+            display: flex;
+            position: absolute;
+            width: 5em;
+            height: 5em;
+            align-items: center;
+        }
+        #Contenedor__text{
+            color: white;
+            margin: 0 auto;
+        }
+        .c1{
+            top: 0;
+            left: 0;
+        }
+        .c2{
+            top: 0;
+            right: 0;
+        }
+        .c3{
+            bottom: 0;
+            left: 0;
+        }
+        .c4{
+            bottom: 0;
+            right: 0;
+        }
+        .c5{
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="ContenedorSupremo">
+        <div class="Contenedor c1" style="background-color: yellow;">
+            <p id="Contenedor__text">Cuadrado 1</p>
+        </div>
+        <div class="Contenedor c2" style="background-color: red;">
+            <p id="Contenedor__text">Cuadrado 2</p>
+        </div>
+        <div class="Contenedor c3" style="background-color: blue;">
+            <p id="Contenedor__text">Cuadrado 3</p>
+        </div>
+        <div class="Contenedor c4" style="background-color: violet;">
+            <p id="Contenedor__text">Cuadrado 4</p>
+        </div>
+        <div class="Contenedor c5" style="background-color: white;">
+            <p id="Contenedor__text" style="color: black;">Cuadrado 5</p>
+        </div>
+    </div>
+</body>
+</html>

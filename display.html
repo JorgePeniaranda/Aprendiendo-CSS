@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+        }
+        .div{
+            display: flex;
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            border: solid red 2px;
+            margin: 50px 50px;
+            align-items: center;
+            justify-content: center;
+        }
+        .ContDiv{
+            border-bottom: 2px solid black;
+        }
+        #ContDiv-Inline .div{
+            display: inline;
+        }
+        #ContDiv-Block .div{
+            display: block;
+        }
+        #ContDiv-InlineBlock .div{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="ContDiv-Inline" class="ContDiv">
+        <div class="div">A</div>
+        <div class="div">A</div>
+        <div class="div">A</div>
+    </div>
+    <div id="ContDiv-Block" class="ContDiv">
+        <div class="div">A</div>
+        <div class="div">A</div>
+        <div class="div">A</div>
+    </div>
+    <div id="ContDiv-InlineBlock" class="ContDiv">
+        <div class="div">A</div>
+        <div class="div">A</div>
+        <div class="div">A</div>
+    </div>
+</body>
+</html>

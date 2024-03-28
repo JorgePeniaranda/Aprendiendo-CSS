@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .Contenedor{
+            display: flex;
+            width: 5em;
+            height: 5em;
+            align-items: center;
+        }
+        #Contenedor__text{
+            color: white;
+            margin: 0 auto;
+        }
+        #EspacialCont-0{
+            z-index: 100;
+        }
+        #EspacialCont-1{
+            position: relative;
+            top: -20px;
+            z-index: -20;
+        }
+        .ContenedorHeavyReJodido{
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+        }
+        .SubContenedorHeavyReJodido{
+            position: relative;
+            top: -20px;
+            left: -20px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="Contenedor" id="EspacialCont-0" style="background-color: yellow;">
+        <p id="Contenedor__text">Cuadrado 1</p>
+    </div>
+    <div class="Contenedor" id="EspacialCont-1" style="background-color: red;">
+        <p id="Contenedor__text">Cuadrado 2</p>
+    </div>
+    <div class="Contenedor" style="background-color: blue;">
+        <p id="Contenedor__text">Cuadrado 3</p>
+    </div>
+    <div class="Contenedor" style="background-color: violet;">
+        <p id="Contenedor__text">Cuadrado 4</p>
+    </div>
+    <div class="Contenedor" style="background-color: green;">
+        <p id="Contenedor__text">Cuadrado 5</p>
+    </div>
+    <div class="Contenedor ContenedorHeavyReJodido" style="background-color: olivedrab;">
+        <div class="Contenedor SubContenedorHeavyReJodido" style="background-color: gray;"></div>
+    </div>
+</body>
+</html>

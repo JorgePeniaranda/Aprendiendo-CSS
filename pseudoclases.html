@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body, html{
+            height: 100vh;
+            width: 100vw;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #text{
+            width: 100px;
+            height: 100px;
+            overflow: auto;
+            background-color: red;
+            transition: background 1s, height 3s, width .2s;
+        }
+        #text:hover{
+            background-color: yellowgreen;
+            width: 300px;
+            height: 200px;
+        }
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: blanchedalmond;
+        }
+        #caja2{
+            width: 50px;
+            height: 50px;
+            background-color: blueviolet;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background 1s, height 3s, width .2s;
+        }
+        #caja2:active{
+            background-color: yellow;
+            width: 300px;
+            height: 200px;
+        }
+        input{
+            transition: background 1s, height 3s, width .2s;
+        }
+        input:focus{
+            background-color: yellow;
+            width: 300px;
+            height: 200px;
+        }
+        #caja3{
+            padding: 50px;
+            background-color: tomato;
+            margin-top: 50px;
+        }
+        #caja3 p:lang(es){
+            padding: 50px;
+            background-color: red;
+        }
+        #caja3 p:lang(en){
+            padding: 50px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, itaque harum? Dolorem illum autem, deleniti obcaecati minus veritatis quam, aliquid repellat perspiciatis beatae cumque excepturi perferendis aspernatur, deserunt odio voluptatum.
+    </div>
+    <center>
+        <a href="#">A de Prueba</a>
+    </center>
+    <div id="caja2">
+        a
+    </div>
+    <input type="text">
+    <div id="caja3">
+        <p lang="es">Hola</p>
+        <p lang="en">Hello</p>
+    </div>
+</body>
+</html>
